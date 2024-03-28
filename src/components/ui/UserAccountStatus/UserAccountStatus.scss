@@ -1,0 +1,19 @@
+.userAccountStatus {
+
+    &_container {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+    
+    &_text {
+        font-size: 0.9rem;
+        font-weight: 500;
+
+
+        &_span {
+            margin-left: 5px;
+            color: rgb(250, 158, 49);
+            cursor: pointer;
+        }
+    }
+}

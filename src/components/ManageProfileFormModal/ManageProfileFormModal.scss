@@ -1,0 +1,164 @@
+.manageProfileFormModal {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        max-width: 34rem;
+        width: 100%;
+        gap: 20px;
+        border-radius: 28px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+        background: rgb(255, 255, 255);
+
+
+        position: relative;
+
+        &_title {
+            font-size: 1.5rem;
+            font-weight: 500;
+
+        }
+
+        .manageProfileFormModal__close_button {
+            position: absolute;
+            top: 35px;
+            right: 38px;
+            cursor: pointer;
+
+
+        }
+
+        &-content {
+            width: 100%;
+            margin: 1.5rem 0 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-input-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            label {
+                font-size: 14px;
+                font-weight: 500;
+                color: rgb(102, 102, 102);
+            }
+
+
+
+            .manageProfileFormModal__form_name-input {
+                // position: relative;
+                width: 100%;
+                box-sizing: border-box;
+                border: 1px solid rgb(250, 158, 49);
+                border-radius: 42px;
+                padding: 16px 24px;
+                outline: none;
+                font-size: 1rem;
+                font-weight: 400;
+                color: rgb(52, 52, 52);
+
+            }
+
+            .manageProfileFormModal__form_bio-input {
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 20px;
+                background: rgb(237, 237, 237);
+                border: none;
+                padding: 16px 24px;
+                outline: none;
+                font-size: 1rem;
+                font-weight: 400;
+                color: rgb(52, 52, 52);
+            }
+
+            .manageProfileFormModal__form_photo-input-container {
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 20px;
+                background: rgb(237, 237, 237);
+                padding: 16px 24px;
+                outline: none;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                cursor: pointer;
+
+                .manageProfileFormModal__form-input-text {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: rgb(138, 138, 138);
+                }
+            }
+        }
+
+        &_uploaded_image-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+
+            .manageProfileFormModal__form_uploaded_image {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                object-fit: cover;
+
+            }
+
+            .manageProfileFormModal__form_uploaded_image-text {
+                text-decoration: underline;
+                font-size: 1rem;
+                font-weight: 400;
+                color: rgb(250, 158, 49);
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+    &__button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 41px;
+        background: rgb(250, 158, 49);
+        color: rgb(250, 250, 250);
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+
+    }
+
+
+}
+
+// .active {
+//     display: none;
+// }

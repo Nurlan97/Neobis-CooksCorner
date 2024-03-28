@@ -1,0 +1,86 @@
+.loginForm {
+
+    &__form_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__form {
+        margin-top: 7rem;
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        
+        &_login_content,
+        &_password_content {
+            position: relative;
+
+            label {
+                color: rgb(250, 158, 49);
+            }
+
+            input {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                border-radius: 42px;
+                background: rgb(237, 237, 237);
+                outline: none;
+                border: none;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+        }
+
+        &_password_content {
+            margin-top: 3.5rem;
+        }
+
+        &_login_title,
+        &_password_title {
+            position: absolute;
+            top: -30px;
+        }
+
+        &_password {
+            position: relative;
+
+            &_input_eyeToggle {
+                position: absolute;
+                top: 19px;
+                right: 25px;
+                cursor: pointer;
+            }
+        }
+
+
+        &_btn {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 42px;
+            background: rgb(250, 158, 49);
+            border: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #fff;
+            cursor: pointer;
+        }
+
+
+
+
+
+    }
+
+    
+}

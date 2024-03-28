@@ -1,0 +1,118 @@
+.registration { 
+    display: flex;
+    justify-content: center;
+
+    &__form_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__form {
+        margin-top: 7rem;
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &_email_content,
+        &_username_content,
+        &_password_content,
+        &_re-password_content {
+            position: relative;
+           
+
+            label {
+                color: rgb(250, 158, 49);
+            }
+
+            input {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                border-radius: 42px;
+                background: rgb(237, 237, 237);
+                outline: none;
+                border: none;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+        }
+
+        &_email_content,
+        &_password_content,
+        &_re-password_content {
+            margin-top: 3.5rem;
+        }
+
+        &_email_title,
+        &_username_title,
+        &_password_title,
+        &_re-password_title {
+            position: absolute;
+            top: -30px;
+        }
+
+        &_email,
+        &_username,
+        &_password,
+        &_re-password {
+            position: relative;
+            
+            &_img,
+            &_input_eyeToggle {
+                position: absolute;
+                top: 19px;
+                right: 25px;
+                cursor: pointer;
+            }
+        }
+
+
+        &_btn {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 42px;
+            background: rgb(250, 158, 49);
+            border: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #fff;
+            cursor: pointer;
+        }
+
+
+        &_error_message {
+            color: rgb(243, 35, 35);
+        }
+
+
+
+    }
+
+    &__registration_container {
+        margin-top: 3.5rem;
+    }
+
+    &__registration {
+
+        &_text {
+            font-size: 0.9rem;
+            font-weight: 500;
+
+
+            &_span {
+                margin-left: 5px;
+                color: rgb(250, 158, 49);
+                cursor: pointer;
+            }
+        }
+    }
+}

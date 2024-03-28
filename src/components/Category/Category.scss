@@ -1,0 +1,62 @@
+.category {
+    padding: 2rem;
+
+    &__greetings_wrapper {
+        display: flex;
+
+        .category__greetings,
+        .category__username {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .category__username {
+            margin-left: 5px;
+        }
+    }
+
+    &__title {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .category__list {
+        margin-top: 24px;
+        display: flex;
+        gap: 4rem;
+
+        a {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgb(102, 102, 102);
+            transition: all 0.4s;
+            transform: scale(1);
+
+        }
+
+        .category__item.active a {
+            font-weight: 600;
+            color: rgb(52, 52, 52);
+            transform: scale(1);
+            position: relative;
+
+
+            &::after {
+                content: '';
+                width: 32px;
+                height: 1px;
+                background: rgb(52, 52, 52);
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                transform: translate(-50%);
+
+
+            }
+        }
+
+    }
+
+    
+}

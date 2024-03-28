@@ -1,0 +1,119 @@
+.sidebar {
+    width: 6rem;
+    height: 100vh;
+    background: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem 0 3rem;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+
+    &__functionality {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+
+
+    }
+
+    &__logo_wrapper {
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 4.75rem;
+            height: 1px;
+            background: rgb(138, 138, 138);
+            bottom: -20px;
+            left: -10px;
+
+
+        }
+    }
+
+    &__logo-text {
+        font-size: 8.4px;
+        font-weight: 500;
+        color: rgb(250, 158, 49);
+    }
+
+    &__homePage_icon_container,
+    &__search_icon_container,
+    &__account_icon_container,
+    &__logout_icon_container {
+
+        img {
+            padding: 1rem;
+            background: rgb(250, 250, 250);
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .sidebar__homePage_icon_active,
+        .sidebar__search_icon_active,
+        .sidebar__account_icon_active {
+            background: rgb(250, 158, 49);
+        }
+
+    }
+
+    &__homePage_icon_container {
+        margin-top: 2rem;
+    }
+
+    &__actions {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+
+
+    }
+
+    &__link, 
+    &__logout {
+        color: rgb(138, 138, 138);
+        border-radius: 10px;
+        background: rgb(250, 250, 250);
+        display: flex;
+        width: 56px;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+
+
+        &.active {
+            color: rgb(250, 250, 250);
+            background: rgb(250, 158, 49);
+        }
+
+        &>span {
+
+            &>svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                // color: #FF5151;
+            }
+
+            // &-icon {
+
+            //     svg {
+            //         color:#FF5151
+            //     }
+            // }
+        }
+
+        
+    }
+}
